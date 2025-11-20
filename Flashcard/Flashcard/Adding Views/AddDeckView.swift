@@ -20,8 +20,8 @@ struct AddDeckView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Deck Name")) {
-                    TextField("Enter deck name", text: $name)
+                Section(header: Text("Topic Name")) {
+                    TextField("Enter topic name", text: $name)
                 }
                 Section(header: Text("Chapter (Optional)")){
                     TextField("Chapter title", text:  $chapterTitle)
@@ -29,7 +29,7 @@ struct AddDeckView: View {
                         
                 }
             }
-            .navigationTitle("New Deck")
+            .navigationTitle("New Topic")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") {
@@ -55,6 +55,6 @@ struct AddDeckView: View {
 
 #Preview {
     AddDeckView { name, title, subtitle in
-        print("Saved deck: \(name), chapter: \(title ?? "none")")
+        print("Saved topic: \(name), chapter: \(title ?? "none")")
     }
 }

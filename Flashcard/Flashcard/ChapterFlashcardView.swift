@@ -62,9 +62,9 @@ struct ChapterFlashcardView: View {
                     Button("Show Answer") { showingAnswer = true }
                         .buttonStyle(.borderedProminent)
                 } else {
-                    HStack {
-                        Button("I Got It Wrong") { nextCard() }.buttonStyle(.bordered)
-                        Button("I Got It Right") { nextCard() }.buttonStyle(.borderedProminent)
+                    HStack {   
+                        Button("I Got It Wrong") { nextCard() }.buttonStyle(.borderedProminent).tint(.red) 
+                        Button("I Got It Right") { nextCard() }.buttonStyle(.borderedProminent).tint(.green)
                     }
                 }
                 

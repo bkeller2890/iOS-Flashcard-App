@@ -26,7 +26,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Decks")
+            .navigationTitle("Topics")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: { showingRemoveDeck = true }) {

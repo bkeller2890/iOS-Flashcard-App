@@ -72,7 +72,7 @@ struct DeckDetailView: View {
                 }
             } else {
                 // Handle case where deck is not found (e.g., if deleted elsewhere)
-                Text("Deck not found.")
+                Text("Topic not found.")
             }
         }
     }
