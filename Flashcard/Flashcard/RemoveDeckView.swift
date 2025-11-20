@@ -33,7 +33,7 @@ struct RemoveDeckView: View {
                 // .onDelete enables swipe-to-delete functionality.
                 .onDelete(perform: deleteDecks)
             }
-            .navigationTitle("Remove Decks")
+            .navigationTitle("Remove Topics")
             .toolbar {
                 // Done button to dismiss the view.
                 ToolbarItem(placement: .confirmationAction) {
